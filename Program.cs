@@ -1,30 +1,40 @@
-﻿using System;
-namespace Palindrome
-{
-    class MyPalindome
-    {
-        public static void notMain(string[] args)
-        {
-            Console.WriteLine("Enter Your No. = ");
-            int no = int.Parse(Console.ReadLine());
-            int rem, rev = 0;
-            int temp = no;
-            while (no > 0)
-            {
-                rem = no % 10;
-                rev = (rev * 10) + rem;
-                no = no / 10;
-            }
-            if (temp == rev)
-            {
-                Console.WriteLine("This is a PlinDrome No.");
-            }
-            else
-            {
-                Console.WriteLine("This is not PlinDrome No.");
-            }
-            Console.ReadKey();
-        }
+﻿//using System;
+//namespace TenthMay
+//{
+//    class place
+//    {
+//        object[] myPlace = new object[5];
 
-    }
-}
+//        public object this[int i]
+//        {
+//            get
+//            {
+//                return myPlace[i];
+//            }
+//            set
+//            {
+//                myPlace[i] = value;
+//            }
+
+//        }
+//    }
+
+//    class personDetails
+//    {
+//        public static void Main()
+//        {
+//            place obj=new place();
+//            obj[0] = "Punjab";
+//            obj[1] = "Haryana";
+//            obj[2] = "Delhi";
+//            obj[3] = "Noida";
+//            obj[4] = "Mumbai";
+
+
+//            Console.WriteLine(obj[0] + " " + obj[1] + " " + obj[2] + " " + obj[3] + " " + obj[4]);
+
+        
+//        }
+
+//    }
+//    }
